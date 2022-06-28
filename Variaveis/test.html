@@ -5,17 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            background-color: black;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
 
+    <div id="titulo">
+        10
+    </div>
+    
+
     <script>
 
-        var n1 = Number(window.prompt("escreva um numero "))
-        var n2 = Number(window.prompt("escreva outro numero pfv"))
-        var soma = n1 + n2
+var media = document.getElementById("titulo")
 
-        window.alert("o resultado é de " + soma)
+       
 
+       var resultado  = media >=7 ? 'aprovado' : 'reprovado'
+
+       console.log(resultado)
+       
 
     </script>
 

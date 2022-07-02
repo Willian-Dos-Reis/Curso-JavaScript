@@ -20,16 +20,32 @@
 </head>
 <body>
     <!--envento de clicar -->
-    <div id="area" onclick="clicar()">
+    <div id="area">
         Interaja
     </div>
 
     <script>
         //quando clicar muda oq estiver dento do id area para clicou 
+        //var fora para pegar mais de uma função em um elemento
+        var a = window.document.getElementById('area')
+        a.addEventListener ('click', clicar)
+        a.addEventListener ('mouseenter', entrar)
+        a.addEventListener ('mouseout', saiu)
+
         function clicar(){
-            var a = window.document.getElementById('area')
-            a.innerText = ('clicou')
+            a.innerText = ('clicou') //mudou o nome 
+            a.style.background = 'red' // mudou a cor 
         }
+
+        function entrar(){
+            a.innerText = ('entrou')
+        }
+
+        function saiu(){
+            a.innerText = ('interaja')
+            a.style.background = 'black'
+        }
+
     </script>
 </body>
 </html>

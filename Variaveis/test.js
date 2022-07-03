@@ -1,14 +1,4 @@
-
-function one(){
-    var n1 = window.document.getElementById('n1')
-}
-
-function tue(){
-    var n2 = window.document.getElementById('n2')
-}
-
-
-function soma(){
-    var s = [n1,n2]
-    
+function insert(num){
+ var numero = document.getElementById("resultado").innerHTML;
+ document.getElementById("resultado").innerHTML = numero + num;
 }

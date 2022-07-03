@@ -5,33 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        div{
-            background-color: black;
-            height: 100px;
-            width: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="test.css">
+ 
 </head>
 <body>
+<div class="container">
 
-    <div id="titulo">
-        1
+    <!--cabecalio-->
+    <div class="heder">
+        <div class="resultado" id="res">
+            <h1>0</h1>
+        </div>
     </div>
-    
 
-    <script>
-
-var media = document.getElementById("titulo").innerHTML
-
-       
-
-       var resultado  = media >=7 ? 'aprovado' : 'reprovado'
-
-       console.log(resultado)
-       
-
-    </script>
+  
+    <!--numeros-->
+    <div class="numeros">
+        <div class="posi">
+        <button class="bt">C</button>
+        <button class="bt">''</button>
+        <button class="bt">''</button>
+        <button class="bt">''</button>  
+        <button class="bt">7</button>
+        <button class="bt">8</button>
+        <button class="bt">9</button>
+        <button class="bt">x</button><br>
+        <button class="bt">4</button>
+        <button class="bt">5</button>
+        <button class="bt">6</button>
+        <button class="b-">-</button><br>
+        <button class="bt">1</button>
+        <button class="bt">2</button>
+        <button class="bt">3</button>
+        <button class="b2" onclick="soma()">+</button><br>
+        <button class="bt">0</button>
+        <button class="bt">,</button>
+        <button class="bt1">=</button>  
+        </div>
+        
+    </div>
+</div>
 
 
 </body>

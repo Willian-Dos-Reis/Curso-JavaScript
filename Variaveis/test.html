@@ -6,37 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #res{
-            color: black;
-            font-size: 1.3em;
-        }
+        
     </style>
  
 </head>
 <body>
 
+<h1>soma de valores</h1>
+<input type="number" id="bt1" > +
+<input type="number" id="bt2" >
+<button id="soma" onclick="clicar()">somar</button>
 
-    <input type="number" id="bt1"> +
-    <input type="number" id="bt2">
-    <button onclick="soma()" id="soma">resultado</button>
-    <div id="resultado">
-        aqui
-    </div>
+<div id="resultado">
+    Resultado
+</div>
 
     <script>
-        function soma(){
-            var n1 = document.getElementById("bt1").innerHTML
-            var n2 = document.getElementById("bt2").innerHTML
-            var res = document.getElementById("resultado").innerHTML
-           
+        function clicar(){
+            var n1 = document.getElementById("bt1");
+            var n2 = document.getElementById("bt2");
+            var res = document.getElementById("resultado")
 
-            var bt1 = number(n1.value);
-            var bt2 = number(n2.value);
-            var s = n1 + n2
-            resultado.innerHTML = s
+            var t1 = Number(n1.value)
+            var t2 = Number(n2.value)
+            var s = t1 + t2 ;
+            resultado.innerText = s
+
+
         }
 
+
+
     </script>
+
 
 </body>
 </html>

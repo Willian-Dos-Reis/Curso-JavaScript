@@ -5,47 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="test.css">
+    <style>
+        #res{
+            color: black;
+            font-size: 1.3em;
+        }
+    </style>
  
 </head>
 <body>
-<div class="container">
 
-    <!--cabecalio-->
-    <div class="heder">
-        <div id="resultado" >
-            <h1></h1>
-        </div>
+
+    <input type="number" id="bt1"> +
+    <input type="number" id="bt2">
+    <button onclick="soma()" id="soma">resultado</button>
+    <div id="resultado">
+        aqui
     </div>
 
-  
-    <!--numeros-->
-<div class="numeros">
-   <div class="posi">
-     <button class="bt">C</button>
-    <button class="bt">''</button>
-    <button class="bt">''</button>
-    <button class="bt">''</button>  
-    <button class="bt">7</button>
-    <button class="bt">8</button>
-    <button class="bt">9</button>
-    <button class="bt">x</button><br>
-    <button class="bt">4</button>
-    <button class="bt">5</button>
-    <button class="bt">6</button>
-    <button class="b-">-</button><br>
-    <button class="bt" onclick="insert('1')" id="n1">1</button>
-    <button class="bt" onclick="insert('2')" >2</button>
-    <button class="bt">3</button>
-    <button class="b2" onclick="soma()">+</button><br>
-    <button class="bt">0</button>
-    <button class="bt">,</button>
-    <button class="bt1">=</button>  
-        </div>
-        
-    </div>
-</div>
+    <script>
+        function soma(){
+            var n1 = document.getElementById("bt1").innerHTML
+            var n2 = document.getElementById("bt2").innerHTML
+            var res = document.getElementById("resultado").innerHTML
+           
 
+            var bt1 = number(n1.value);
+            var bt2 = number(n2.value);
+            var s = n1 + n2
+            resultado.innerHTML = s
+        }
+
+    </script>
 
 </body>
 </html>

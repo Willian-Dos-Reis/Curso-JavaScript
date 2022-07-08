@@ -1,0 +1,52 @@
+
+*{
+    margin:0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    align-items: center;
+}
+.list li  {
+    margin-left: 30px;
+    list-style: none;
+}
+.list button {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.list a{
+    text-decoration: none;
+    color: white;
+   
+    font-size: 1.3em;
+
+}
+.list a:hover{
+    
+    background-color: beige;
+    color: black;
+    border-radius: 10px;
+}
+
+nav{
+    height: 50px;
+    background-color: black;
+}
+
+.entre{
+    height: 30px;
+    width: 80px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius:10px ;
+    font-size:1.2em;
+    
+}

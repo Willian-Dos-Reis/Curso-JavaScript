@@ -1,9 +1,8 @@
-var vel = 70.5
+var velocidade = 80;
 
-if (vel >= 70){
-    console.log("voce ultrapassou o limete de velocidade")
-} else {
-    console.log("dirija sempre usando o cinto de segurança")
+if (velocidade >=70){
+    console.log("esta acima da velocidade")
 }
-
-
+else{
+    console.log("esta dirigindo certo")
+}

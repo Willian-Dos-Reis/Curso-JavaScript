@@ -7,6 +7,7 @@
     <title>Document</title>
     <style>
         #area{
+<<<<<<< HEAD
             
             font: normal 20pt Arial ;
             background-color: green;
@@ -34,5 +35,47 @@
         Interaja...
     </div>
     
+=======
+            font: normal 20pt arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center; 
+
+        }
+    </style>
+</head>
+<body>
+    <!--envento de clicar -->
+    <div id="area">
+        Interaja
+    </div>
+
+    <script>
+        //quando clicar muda oq estiver dento do id area para clicou 
+        //var fora para pegar mais de uma função em um elemento
+        var a = window.document.getElementById('area')
+        a.addEventListener ('click', clicar)
+        a.addEventListener ('mouseenter', entrar)
+        a.addEventListener ('mouseout', saiu)
+
+        function clicar(){
+            a.innerText = ('clicou') //mudou o nome 
+            a.style.background = 'red' // mudou a cor 
+        }
+
+        function entrar(){
+            a.innerText = ('entrou')
+        }
+
+        function saiu(){
+            a.innerText = ('interaja')
+            a.style.background = 'black'
+        }
+
+    </script>
+>>>>>>> 63a826bc445d09b1259fcaa396e75343226777fe
 </body>
 </html>

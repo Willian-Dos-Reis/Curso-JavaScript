@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+<<<<<<< HEAD
         div{
             background-color: black;
             height: 100px;
@@ -13,10 +14,15 @@
             color: white;
             margin: 10px;
         }
+=======
+        
+>>>>>>> 63a826bc445d09b1259fcaa396e75343226777fe
     </style>
+ 
 </head>
 <body>
 
+<<<<<<< HEAD
     <div id="titulo">
         10
     </div>
@@ -27,17 +33,36 @@
     </div>
 
     
+=======
+<h1>soma de valores</h1>
+<input type="number" id="bt1" > +
+<input type="number" id="bt2" >
+<button id="soma" onclick="clicar()">somar</button>
+
+<div id="resultado">
+    Resultado
+</div>
+>>>>>>> 63a826bc445d09b1259fcaa396e75343226777fe
 
     <script>
+        function clicar(){
+            var n1 = document.getElementById("bt1");
+            var n2 = document.getElementById("bt2");
+            var res = document.getElementById("resultado")
 
+<<<<<<< HEAD
     var media = document.getElementById("titulo").innerHTML
+=======
+            var t1 = Number(n1.value)
+            var t2 = Number(n2.value)
+            var s = t1 + t2 ;
+            resultado.innerText = s
+>>>>>>> 63a826bc445d09b1259fcaa396e75343226777fe
 
-       
 
-       var resultado  = media >=7 ? 'aprovado' : 'reprovado'
+        }
 
-       console.log(resultado)
-       
+
 
     </script>
 

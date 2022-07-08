@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+        #txtn1{
+            border: 2px solid red;
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 50px;
+            font-size: 1.3em;
+            overflow-y: scroll none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="" id="txtn1"> +
+    <input type="number" name="" id="txtn2">
+    <!--quando clicar dispara a funcao-->
+    <input type="button" value="Soma" onclick="soma()">
+
+    <div id="res">Resultado</div>
+
+    <script>
+        function soma(){
+            var tn1 = window.document.getElementById("txtn1")
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById("res")
+
+            //convertento o valor dado de string para number
+            //o n1 sera oq foz q resposta de tn1 so q em numero
+            var n1 = Number(tn1.value)
+            var n2 =Number(tn2.value)
+            var s = n1 + n2 
+
+            //muda para mim oq estiver dentro do id res para a variavel s 
+            res.innerText = s
+        }
+    </script>
+    
+</body>
+</html>

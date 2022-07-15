@@ -1,0 +1,11 @@
+var idade = 12;
+
+if (idade >= 18){
+    console.log("é Obrigatorio a votação")
+} else if(idade < 18){
+    console.log("Não é obrigatorio a votação")
+}
+else{
+    console.log("esta livre de votação")
+
+}

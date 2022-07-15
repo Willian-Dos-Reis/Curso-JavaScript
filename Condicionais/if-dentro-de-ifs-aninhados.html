@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #voto{
+        color: white;
+        background-color: black;
+        height: 100px;
+        width: 100px;
+    }
+    .containe{
+        display:flex;
+    }
+</style>
+<body>
+
+  
+        <input type="number" name="" id="idade">
+    
+        <input type="button" id="butao" onclick="clicar()">
+
+        <input type="text" name="" id="res">
+       
+
+      
+    <script>
+       
+
+
+        
+
+        function clicar(){
+            var idade = document.getElementById("idade").innerHTML
+            var res = document.getElementById("res")
+
+            if (idade < 16 ){
+              res.innerText = ("nao vota")
+          } 
+          else if(idade < 18 || idade > 65){
+              res.innerText = ("voto op")
+          }
+          else {
+              res.innerText = ("voto ob")
+          
+          }
+        }
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soma de valores</h1>
+    <input type="number" name="" id="tx1"> +
+    <input type="number" name="" id="tx2">
+    <button onclick="clicar()" id="">somar</button>
+    <label for="" id="res">resultado</label>
+
+    <script>
+        function clicar(){
+            var tx1 = document.getElementById("tx1")
+            var tx2 = document.getElementById("tx2")
+            var res = document.getElementById("res")
+
+            var n1 = Number(tx1.value)
+            var n2 = Number(tx2.value)
+            var s = n1 + n2 
+            
+            if(s > 18){
+                res.innerHTML = ("maior de idade")
+            } else {
+                res.innerHTML = ("menor de idade")
+            }
+
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,8 +1,5 @@
 
-
-
 var dia = 16;
-
 switch (dia){
     case 0 :
     console.log("domingo");

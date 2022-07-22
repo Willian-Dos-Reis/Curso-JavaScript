@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body{
+            background-color: black;
+            color:white
+            
+        }
+        .container{
+            background-image: linear-gradient(to left,rgb(204, 167, 2),rgba(228, 213, 0, 0.904));
+            height: 500px;
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex; /*pai bloco filho inline*/
+            align-items: center;/*alinhar vertical*/
+            justify-content: center;/*alinhar horizontal*/
+        }
+
+        .posi{
+            background-image: linear-gradient(to left,rgb(117, 255, 4),rgb(72, 196, 0));
+            height: 50%;
+            border-radius: 5px;
+            width: 500px;
+            display: flex; /*pai bloco filho inline*/
+            align-items: center;/*alinhar vertical*/
+            justify-content: center;/*alinhar horizontal*/
+            justify-content: space-around;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.692);
+        }
+
+        .bloco{
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 220px;
+            width: 150px;
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.692);
+            letter-spacing: 4px; /*spaço entre as letras*/
+        }
+        
+        section{
+            font-size: 3.10em;
+        }
+
+        .bloco > p {
+            font-size: 0.7em;
+        }
+
+        
+    </style>
+    
+
+    <script>/*
+        function relogio(){
+            var h = document.getElementById("horab")
+            var data = new Date()
+            var hora = data.getHours
+            h.innerHTML = hora
+        }*/
+        const hora = document.getElementById("hora")
+        const minuto = document.getElementById("minuto")
+        const segundo = document.getElementById("segundo")
+    </script>
+</head>
+<body onload="relogio()">
+    <div class="container">
+
+
+        <div class="posi">
+
+            <div class="bloco">
+                <section id="hora">00</section>
+                <p>HORA</p>
+            </div>
+            
+            <div class="bloco">
+                <section id="minuto">00</section>
+                <p>MINUTO</p>
+            </div>
+            
+            <div class="bloco">
+                <section id="segundo">00</section>
+                <p>SEGUNDO</p>
+            </div>
+        </div>
+
+        
+    </div>
+    
+    
+</body>
+</html>

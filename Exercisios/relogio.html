@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,26 +53,56 @@
         }
 
         .bloco > p {
-            font-size: 0.7em;
+            font-size: 0.9em;
         }
 
         
     </style>
     
 
-    <script>/*
-        function relogio(){
-            var h = document.getElementById("horab")
-            var data = new Date()
-            var hora = data.getHours
-            h.innerHTML = hora
-        }*/
+    <script>
+/*
         const hora = document.getElementById("hora")
         const minuto = document.getElementById("minuto")
         const segundo = document.getElementById("segundo")
+
+        const relogio = setInterval(function time(){
+            let dateToday = new Date();
+            let hr = dateToday.getHours();
+            let min = dateToday.getMinutes();
+            let s = dateToday.getSeconds();
+
+            hora.texContent = hr;
+            minuto.textContent = min;
+            segundo.texContent = s;
+            
+        })
+
+            
+*/
+            function relogio(){
+            const hora = document.getElementById("hora")
+            const minuto = document.getElementById("minuto")
+            const segundo = document.getElementById("segundo")
+
+
+            let hoje = new Date();
+            let hr = hoje.getHours();
+            let min = hoje.getMinutes();
+            let s = hoje.getSeconds();
+
+            if(s < 10) s = '0' + s;
+
+            hora.textContent = hr;
+            minuto.textContent = min;
+            segundo.textContent = s;
+            }
+            
+
+        
     </script>
 </head>
-<body onload="relogio()">
+<body onMouseOver="relogio()">
     <div class="container">
 
 

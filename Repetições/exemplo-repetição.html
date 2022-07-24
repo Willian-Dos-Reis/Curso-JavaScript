@@ -106,19 +106,35 @@ img{
 
            if ( ini.value == 0 || fim.value == 0 || passo.value == 0){
             window.alert("caixa vazia verifique novamente")
-           }else{
-            res.innerHTML = "contando"
-            let i = Number(ini.value)
-            let f = Number(fim.value)
-            let p = Number(res.value)
+         } else{ 
+            res.innerHTML = "Contando... "
+            let i = Number(ini.value) 
+            let f = Number(fim.value)  
+            let p = Number(res.value) 
 
-            while(let c = i ; c<=f ; c+=p)
-            
+            /*c é o contador ele começa no inico*/
+            /*enquanto c for menor ou igual a f */
+            /*o contador recebe ele msm mais p passo*/
+            if (i < f){
 
-           }
+                for(let c = i ; c <= f ; c += p){
+                res.innerHTML += `${c}`}
+ 
+            } else {
+                for (let c = i ; c>= f; c+= p){
+                    res.innerHTML += `${c}`
+                }
+            }
+              res.innerHTML +=
+
+             }
+           
+           
+
+           
 
        
-        }
+    
         
     </script>
 </body>

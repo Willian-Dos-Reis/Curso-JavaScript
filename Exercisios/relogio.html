@@ -62,30 +62,11 @@
     
 
     <script>
-/*
-        const hora = document.getElementById("hora")
-        const minuto = document.getElementById("minuto")
-        const segundo = document.getElementById("segundo")
 
-        const relogio = setInterval(function time(){
-            let dateToday = new Date();
-            let hr = dateToday.getHours();
-            let min = dateToday.getMinutes();
-            let s = dateToday.getSeconds();
-
-            hora.texContent = hr;
-            minuto.textContent = min;
-            segundo.texContent = s;
-            
-        })
-
-            
-*/
             function relogio(){
             const hora = document.getElementById("hora")
             const minuto = document.getElementById("minuto")
             const segundo = document.getElementById("segundo")
-
 
             let hoje = new Date();
             let hr = hoje.getHours();
@@ -99,8 +80,6 @@
             segundo.textContent = s;
             }
             
-
-        
     </script>
 </head>
 <body onMouseOver="relogio()">

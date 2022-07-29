@@ -21,11 +21,15 @@
             if (anonas.value  == 0 || (anonas.value) > anoatual){
                 window.alert("Erro tente novamente")
             } else {
-                window.alert(idade)
+                //window.alert(idade)
 
                 var genero = ''
-                if (idade >= 0 && idade <=10 ){
-                    i
+                if (sexmas.checked){
+                    res.innerHTML = 'é menino'
+                } else if (sexfe.checked){
+                    res.innerHTML = 'é menina'
+                }else {
+                    window.alert('erro sexo nao definido') 
                 }
             } 
 

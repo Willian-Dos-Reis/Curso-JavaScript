@@ -80,7 +80,7 @@ img{
         </div>
 
         <div>
-            <select name="tabuada" id="seletab"></select>
+            <select name="tabuada" id="seltab" size="10"></select>
             
         </div>
     </section>
@@ -93,11 +93,27 @@ img{
             var Numero = document.getElementById("txtn")
             var tab = document.getElementById("seltab")
 
-            var n =Number(Numero.value)
-        if(n == 0){
+            
+        if(Numero.value.length == 0){
             window.alert("Erro digite um numero pfv")
             } else{
-                n
+                //converteu a caixa do input para number
+                var n =Number(Numero.value)
+                var c =1 //guardou essa var para definir o inicio 
+                while (c <= 10){
+
+                    //Criando o elemento otpion dentro do selct
+                    var item = document.createElement('option')
+
+                    //vai mudar o texto do item para numero dado vezes 1
+                    item.text = `${n} x ${c} = ${n*c}`
+                    
+                    //vai adicionar um elemnto com o conteudo item 
+                    tab.appendChild(item)
+
+                    //transformou c no resultado da multiplicação
+                    c++
+                }
                 
             }
         }

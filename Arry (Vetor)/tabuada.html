@@ -100,6 +100,10 @@ img{
                 //converteu a caixa do input para number
                 var n =Number(Numero.value)
                 var c =1 //guardou essa var para definir o inicio 
+
+                
+                //a tag tab fica fazio no começo fazendo limpar
+                tab.innerHTML =''
                 while (c <= 10){
 
                     //Criando o elemento otpion dentro do selct
@@ -108,10 +112,10 @@ img{
                     //vai mudar o texto do item para numero dado vezes 1
                     item.text = `${n} x ${c} = ${n*c}`
                     
-                    //vai adicionar um elemnto com o conteudo item 
+                    //vai adicionar um elemnto no filho do item
                     tab.appendChild(item)
 
-                    //transformou c no resultado da multiplicação
+                    //adicionou mais 1 no C
                     c++
                 }
                 

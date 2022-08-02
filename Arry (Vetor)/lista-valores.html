@@ -98,16 +98,49 @@ select#flista{
         let res = document.querySelector("div#res")
         let valores = []
 
+
+        //para verificar se n é um numero e estiver entre 0 e 100
+        function isnumero(n){
+            if (Number(n) >= 1 && Number(n) <=100){
+                return true
+            } else{
+                return false
+            }
+        }
+        
+
+        //para verificar se o valor esta na lista
+        function inlista(n, l){
+            if (l.indexOf(Number(n)) != 1 ){
+                return true
+            } else {
+                return false
+            }
+
+        }
+
+
+
         function adicionar(){
-            // se o isnumero for um numero.valeu 
-            // e se nao inlista numero.valeu
-            // so adiciona se os dois forem verades
-        if (isnumero(num.valeu) && ! inlista(num.valeu) ) {
+            // se o isnumero for um numero que vai ser verificado na functio isnumero
+
+            // ee se o numero ja nao estiver dentro da function inlista
+            // 
+        if(isnumero(num.valeu) && !inlista(num.valeu, valores) ) {
+          
+            //adicionar no vetor o num convertido
+            valores.push(Number(num.value))
+
+            //adicionar no select
+            let item = document.createElement('option')
+            item.tetx = `valor ${num.value} adicionar `
+            lista.appendChild(item)
            
-            } 
-        } else {
+            }  else {
             window.alert("valor invalido ou ja encontrado na lista ")
         }
+        }
+       
        
     </script>
 </body>
